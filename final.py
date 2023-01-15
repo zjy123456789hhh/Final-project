@@ -61,23 +61,23 @@ class Conversion:
 
 
     def length(self):
-        current = self.head
+        c= self.head
         count = 0
-        while current is not None:
+        while c is not None:
             count += 1
-            current = current.next
+            c = c.next
         return count
 
     def get_l(self,i):
         if i<0 or i>=self.length():
             return None
-        current_node=self.head
+        c_node=self.head
         index=0
-        if current_node and index!=i:
+        if c_node and index!=i:
             for index in range(i):
-                current_node=current_node.next
+                c_node=c_node.next
                 index+=1
-            return current_node
+            return c_node
             
 #2
 class BH:
